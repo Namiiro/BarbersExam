@@ -1,25 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+  
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content>
-    <ion-list>
+  <ion-content>
+      <ion-card class="welcome-card">
+        <img src="/assets/barberslogo1.JPG" alt="" />
+        <ion-card-header>
+            <ion-card-title>CREATE ACCOUNT</ion-card-title>
+        </ion-card-header>
 
-      
+        <ion-list>
 
-        <ion-item>
-          <ion-label fixed>Username</ion-label>
-          <ion-input type="text" value=""></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label fixed>Password</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
-      
-      </ion-list>
-      <ion-button href="/maps">SIGN IN</ion-button>
-    <ion-button href="/login">CREATE ACCOUNT</ion-button>
-</ion-content>
+            <ion-item>
+                <ion-label position="stacked">Gender <ion-text color="medium"></ion-text></ion-label>
+                <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-label position="stacked">First Name <ion-text color="danger"></ion-text></ion-label>
+                  <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="stacked">Last Name <ion-text color="danger"></ion-text></ion-label>
+                    <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label position="stacked">Username <ion-text color="danger"></ion-text></ion-label>
+                      <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked">Password <ion-text color="danger"></ion-text></ion-label>
+                        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                      </ion-item>
+
+                      <ion-item>
+                          <ion-label position="stacked">Email <ion-text color="danger"></ion-text></ion-label>
+                          <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                        </ion-item>
+
+                      <ion-button href ="/maps" color="medium">CREATE ACCOUNT</ion-button>
+                  
+                
+                
+
+
+
+
+
+
+
+
+                      </ion-list>
+                      <ion-card-content>
